@@ -1,0 +1,31 @@
+(ja4d_env) ricardo@Ricardos-MacBook-Air ja4d_project % python3 JA4_d_v5_full.py Nico.pcapng --ech-map ja4d_ech_map.json --dns-from-pcap --dns-ech              
+[INFO] Loading PCAP file: Nico.pcapng
+[INFO] Total packets: 8937
+[INFO] ECH entries extracted from DNS HTTPS/SVCB records in PCAP: 0
+[INFO] ECH entries loaded from auxiliary map: 3
+
+==============================================================================
+[*] Analysis Complete
+[*] ClientHello packets found: 54
+[*] Unique JA4 fingerprints: 22
+[*] Unique JA4_d fingerprints: 2
+[*] Unique full JA4+JA4_d fingerprints: 22
+==============================================================================
+
+JA4_d Fingerprints Summary:
+
+Fingerprint: 1-0-o-n
+  Count: 53
+  SNIs: api-partner.spotify.com, api.spotify.com, apresolve.spotify.com, cdn.cookielaw.org, chat.deepseek.com
+  Example JA4: t74d1517h2_8daaf6152771_322eac176234
+  Example JA4 + JA4_d: t74d1517h2_8daaf6152771_322eac176234_1-0-o-n
+  Example Groups: [X25519MLKEM768, x25519, secp256r1, secp384r1]
+  Example Key Share: [X25519MLKEM768, x25519]
+
+Fingerprint: 0-0-p-n
+  Count: 1
+  SNIs: api.whatsapp.net
+  Example JA4: t202d2014h2_a09f3c656075_88a13278e257
+  Example JA4 + JA4_d: t202d2014h2_a09f3c656075_88a13278e257_0-0-p-n
+  Example Groups: [x25519, secp256r1, secp384r1, secp521r1]
+  Example Key Share: [x25519]

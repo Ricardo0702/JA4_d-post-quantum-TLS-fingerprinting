@@ -1,0 +1,31 @@
+(ja4d_env) ricardo@Ricardos-MacBook-Air ja4d_project % python3 JA4_d_v5_full.py Uni.pcapng --ech-map ja4d_ech_map.json --dns-from-pcap --dns-ech
+[INFO] Loading PCAP file: Uni.pcapng
+[INFO] Total packets: 57348
+[INFO] ECH entries extracted from DNS HTTPS/SVCB records in PCAP: 0
+[INFO] ECH entries loaded from auxiliary map: 3
+
+==============================================================================
+[*] Analysis Complete
+[*] ClientHello packets found: 172
+[*] Unique JA4 fingerprints: 45
+[*] Unique JA4_d fingerprints: 2
+[*] Unique full JA4+JA4_d fingerprints: 45
+==============================================================================
+
+JA4_d Fingerprints Summary:
+
+Fingerprint: 1-0-o-n
+  Count: 162
+  SNIs: 6e5351d7ad9e61e3eb9b7bb3b36ab3a0a41f44960fd9fe3157824a833d65bf7.us-east-1.prod.service.minerva.devices.a2z.com, a.nel.cloudflare.com, aa.google.com, ad-delivery.net, ads.pubmatic.com
+  Example JA4: t58d1517h2_8daaf6152771_322eac176234
+  Example JA4 + JA4_d: t58d1517h2_8daaf6152771_322eac176234_1-0-o-n
+  Example Groups: [X25519MLKEM768, x25519, secp256r1, secp384r1]
+  Example Key Share: [X25519MLKEM768, x25519]
+
+Fingerprint: 0-0-p-n
+  Count: 10
+  SNIs: api.whatsapp.net, eu-mobile.events.data.microsoft.com, gateway.icloud.com, gsas.apple.com, mobile.events.data.microsoft.com
+  Example JA4: t106d2014h2_a09f3c656075_88a13278e257
+  Example JA4 + JA4_d: t106d2014h2_a09f3c656075_88a13278e257_0-0-p-n
+  Example Groups: [x25519, secp256r1, secp384r1, secp521r1]
+  Example Key Share: [x25519]

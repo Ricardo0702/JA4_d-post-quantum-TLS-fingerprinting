@@ -1,0 +1,87 @@
+(ja4d_env) ricardo@Ricardos-MacBook-Air ja4d_project % python3 JA4_d_v5_full.py test_traffic.pcap --ech-map ja4d_ech_map.json --dns-from-pcap --dns-ech     
+[INFO] Loading PCAP file: test_traffic.pcap
+[INFO] Total packets: 5597
+[INFO] ECH entries extracted from DNS HTTPS/SVCB records in PCAP: 0
+[INFO] ECH entries loaded from auxiliary map: 3
+
+==============================================================================
+[*] Analysis Complete
+[*] ClientHello packets found: 653
+[*] Unique JA4 fingerprints: 2
+[*] Unique JA4_d fingerprints: 9
+[*] Unique full JA4+JA4_d fingerprints: 9
+==============================================================================
+
+JA4_d Fingerprints Summary:
+
+Fingerprint: 1-0-o-n
+  Count: 304
+  SNIs: alt-port-8443.example.test, fragmented-hybrid.example.test, hybrid-optimistic.example.test, legacy-hybrid.example.test
+  Example JA4: t13d0306h2_55b375c5d22e_21a84fe6cd26
+  Example JA4 + JA4_d: t13d0306h2_55b375c5d22e_21a84fe6cd26_1-0-o-n
+  Example Groups: [X25519MLKEM768, x25519, secp256r1, secp384r1]
+  Example Key Share: [X25519MLKEM768, x25519]
+
+Fingerprint: 0-0-p-n
+  Count: 107
+  SNIs: classic-only.example.test
+  Example JA4: t13d0306h2_55b375c5d22e_21a84fe6cd26
+  Example JA4 + JA4_d: t13d0306h2_55b375c5d22e_21a84fe6cd26_0-0-p-n
+  Example Groups: [x25519, secp256r1, secp384r1, secp521r1]
+  Example Key Share: [x25519]
+
+Fingerprint: 1-0-p-n
+  Count: 71
+  SNIs: hybrid-pessimistic.example.test
+  Example JA4: t13d0306h2_55b375c5d22e_21a84fe6cd26
+  Example JA4 + JA4_d: t13d0306h2_55b375c5d22e_21a84fe6cd26_1-0-p-n
+  Example Groups: [X25519MLKEM768, x25519, secp256r1]
+  Example Key Share: [x25519]
+
+Fingerprint: 1-1-m-n
+  Count: 53
+  SNIs: mixed-pq.example.test
+  Example JA4: t13d0306h2_55b375c5d22e_21a84fe6cd26
+  Example JA4 + JA4_d: t13d0306h2_55b375c5d22e_21a84fe6cd26_1-1-m-n
+  Example Groups: [X25519MLKEM768, MLKEM768, x25519, secp256r1]
+  Example Key Share: [X25519MLKEM768, x25519]
+
+Fingerprint: 0-2-o-n
+  Count: 32
+  SNIs: pure-pq-optimistic.example.test
+  Example JA4: t13d0306h2_55b375c5d22e_21a84fe6cd26
+  Example JA4 + JA4_d: t13d0306h2_55b375c5d22e_21a84fe6cd26_0-2-o-n
+  Example Groups: [MLKEM512, MLKEM768, x25519]
+  Example Key Share: [MLKEM512, MLKEM768, x25519]
+
+Fingerprint: 1-0-o-h
+  Count: 32
+  SNIs: ech-hybrid.example.test
+  Example JA4: t13d0307h2_55b375c5d22e_863d1cb6d3bf
+  Example JA4 + JA4_d: t13d0307h2_55b375c5d22e_863d1cb6d3bf_1-0-o-h
+  Example Groups: [X25519MLKEM768, x25519]
+  Example Key Share: [X25519MLKEM768, x25519]
+
+Fingerprint: 0-0-p-c
+  Count: 30
+  SNIs: ech-classical.example.test
+  Example JA4: t13d0307h2_55b375c5d22e_863d1cb6d3bf
+  Example JA4 + JA4_d: t13d0307h2_55b375c5d22e_863d1cb6d3bf_0-0-p-c
+  Example Groups: [x25519, secp256r1, secp384r1]
+  Example Key Share: [x25519]
+
+Fingerprint: 0-1-o-n
+  Count: 13
+  SNIs: legacy-purepq.example.test
+  Example JA4: t13d0306h2_55b375c5d22e_21a84fe6cd26
+  Example JA4 + JA4_d: t13d0306h2_55b375c5d22e_21a84fe6cd26_0-1-o-n
+  Example Groups: [ML-KEM-768-private, x25519]
+  Example Key Share: [ML-KEM-768-private, x25519]
+
+Fingerprint: 0-1-o-q
+  Count: 11
+  SNIs: ech-pqpure.example.test
+  Example JA4: t13d0307h2_55b375c5d22e_863d1cb6d3bf
+  Example JA4 + JA4_d: t13d0307h2_55b375c5d22e_863d1cb6d3bf_0-1-o-q
+  Example Groups: [MLKEM1024, x25519]
+  Example Key Share: [MLKEM1024, x25519]
