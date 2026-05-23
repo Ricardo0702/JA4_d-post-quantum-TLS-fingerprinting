@@ -192,5 +192,4 @@ This project is released under the MIT License.
 
 # Author
 
-Ricardo Pereira González
-Bachelor’s Thesis Project – Cybersecurity / Network Analysis – Telecommunications Network Engineering Degree (Course 2025 - 2026)
+Ricardo Pereira González – Bachelor’s Thesis Project – Cybersecurity / Network Analysis – Telecommunications Network Engineering Degree (Course 2025 - 2026)
