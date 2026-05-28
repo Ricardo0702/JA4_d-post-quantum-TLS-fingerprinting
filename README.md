@@ -4,7 +4,7 @@ JA4_d is a post-quantum-aware extension to the JA4 TLS fingerprinting methodolog
 
 This repository contains the implementation, synthetic datasets, example outputs, and supporting material developed for the Bachelor’s Thesis project:
 
-> **“Post-quantum-aware TLS client fingerprinting: JA4_d”**
+> **“TOWARDS POST-QUANTUM-AWARE TLS FINGERPRINT: DESIGN AND EVALUATION OF JA4_d”**
 
 The project focuses on passive TLS traffic analysis and visibility into post-quantum deployment scenarios, including:
 - Hybrid post-quantum key exchange
